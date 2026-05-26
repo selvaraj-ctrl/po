@@ -136,7 +136,7 @@ body {
   
 
 .img-card img {
-  width: -100px;      /* increase size */
+  width: 250px;      /* increase size */
   height: 300px;      /* ajust image size */
   object-fit: cover; /* prevents stretching */
   border-radius: 1px;
