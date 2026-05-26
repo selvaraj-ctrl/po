@@ -129,7 +129,7 @@ body {
   border: 1px solid rgba(255,255,255,0.08);
 
   box-shadow: 0 0 25px rgba(79,195,247,0.2);
-  transform: translate(-10px, -10px);
+  transform: translate(10px, -10px);
 } /* moves the card up and left for better positioning */
   
 
