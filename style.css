@@ -82,19 +82,30 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 24px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(18px);
-  border: 1px solid rgba(29, 79, 69, 0.08);
-  border-radius: 18px;
-  box-shadow: 0 14px 30px var(--shadow);
+  padding: 5px 20px;
+
+
+  /* Glass effect */
+  background: rgba(151, 234, 240, 0.5);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgb(252, 250, 250);
+  font-size: 23px;
+  position: fixed;   /* or sticky */
+  top: 0;
+  width: 100%;
+  z-index: 1000;    
 }
 
-.brand {
-  font-weight: 900;
-  font-size: 1.6rem;
-  letter-spacing: 0.08em;
-  color: var(--primary);
+
+.navbar nav a {
+  color: rgb(10, 1, 1);
+  margin: 0 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #edf3f7;
 }
 
 .nav {
@@ -122,13 +133,23 @@ a {
   align-items: center;
   gap: 14px;
 }
+.img-card {
+  padding: 0px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(1px);
+  border: 1px solid rgba(255,255,255,0.08);
 
-.live-clock {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 600;
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 25px rgba(79,195,247,0.2);
+  transform: translate(-10px, -10px);
+} /* moves the card up and left for better positioning */
+  
+
+.img-card img {
+  width: -100px;      /* increase size */
+  height: 300px;      /* ajust image size */
+  object-fit: cover; /* prevents stretching */
+  border-radius: 1px;
 }
 
 .nav-cta,
