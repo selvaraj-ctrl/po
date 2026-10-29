@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ mode_title }} — Hourly Test History</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='tester.css') }}">
+</head>
+<body data-mode="{{ mode }}">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">COMPLETED TESTS · HOURLY VIEW</div>
+      <h1>{{ mode_title }}</h1>
+    </div>
+    <div class="topbar-actions">
+      <a class="secondary-button" href="/{{ mode }}">← BACK TO TEST DASHBOARD</a>
+      <a class="secondary-button" href="/">MODE SELECTION</a>
+    </div>
+  </header>
+  <main class="dashboard history-dashboard">
+    <section class="history-summary card">
+      <div><span class="eyebrow">TODAY</span><h2>ESP32 Tests Completed</h2><p id="history-date"></p></div>
+      <strong id="history-total" class="history-total">0</strong>
+    </section>
+    <section class="card">
+      <div class="section-heading">
+        <div><span class="eyebrow">LOCAL TIME</span><h2>Completed Tests by Hour</h2></div>
+        <span class="history-note">Includes completed PASS and FAIL tests</span>
+      </div>
+      <div id="hourly-chart" class="hourly-chart" role="img" aria-label="Hourly completed ESP32 tests"></div>
+    </section>
+    <p id="history-error" class="notification" role="status"></p>
+  </main>
+  <script src="{{ url_for('static', filename='history.js') }}"></script>
+</body>
+</html>

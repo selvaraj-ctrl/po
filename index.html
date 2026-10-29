@@ -1,392 +1,409 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <style>
-    .bold-line {
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      font-size: 20px; /* optional */
-    }
-  </style>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Selvaraj Portfolio</title>
-
-  <link rel="stylesheet" href="style.css"/>
-</head>
-
-<body>
-
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">SG</div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#skills-header">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#Events">Events</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <p class="badge">
-  ✦ Available for internships - 2026
-</p>
-
-      <p class="bold-line" style="font-size: 5em;">
-  Hi, I'm <span>Selvaraj G</span>
-</p>
-
-      <h3>B.E. Electronics & Communication Engineering, 3rd Year</h3>
-
-      <p class="about-box">
-       Passionate ECE undergraduate exploring the intersection of embedded systems, 
-      signal processing, and IoT. I build hardware that thinks — from microcontroller 
-       prototypes to full PCB designs — and love translating physics into working circuits.
-     </p>
-      <div class="buttons">
-       <a href="https://drive.google.com/file/d/1y0BRIrKEnvIbeT_kB8ZUXoPT676v6pBp/view?usp=drive_link" class="btn"><img src="image/letter.png" alt="mail icon" class="icon"><h2>View Resume</h2></a>
-        <a href="mailto:selvatheengineer@gmail.com" class="btn ">
-       <img src="image/email.png" alt="mail icon" class="icon"><h2> 
-       Email Me</h2></a>
-        <a href="https://www.linkedin.com/in/selvaraj-g-5100303b3/"class="btn ">
-        <img src="image/ln.png" alt="mail icon" class="icon"></a>
-        <a href="https://github.com/selvaraj-ctrl"class="btn ">
-        <img src="image/github.png" alt="mail icon" class="icon"></a>
-
-    </div>
-
-    <div class="hero-img">
-  <div class="img-card">
-    <img src="image/image.png" alt="profile">
-  </div>
-</div>
-  </section>
-
-  <!-- SKILLS -->
-<section id="skills-header"class="skills-section">
-  <h4 class="mini-title">TOOLKIT</h4>
-  <h2 class="main-title">Skills & Expertise</h2>
-  <p class="subtitle">
-    A hands-on blend of hardware, firmware and software — tuned for building working systems.
-  </p>
-
-  <div class="skills-container">
-
-    <!-- Core ECE -->
-    <div class="skill-card">
-      <h3>Core ECE</h3>
-      <div class="tags">
-        <span>Digital Electronics</span>
-        <span>Analog Circuits</span>
-        <span>Signal Processing</span>
-        <span>Communication Systems</span>
-        <span>Control Systems</span>
-        <span>VLSI Design </span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Selvaraj G portfolio showcasing electronics, embedded systems, PCB testing, IoT, and engineering projects."
+    />
+    <title>Selvaraj G | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand" aria-label="Selvaraj G home">SG</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="topbar-right">
+        <time class="live-clock" id="live-clock" aria-label="Current date and time"></time>
+        <a class="nav-cta" href="#contact">Hire Me</a>
       </div>
-    </div>
+    </header>
 
-    <!-- Programming -->
-    <div class="skill-card">
-      <h3>Programming</h3>
-      <div class="tags">
-        <span>Embedded C</span>
-        <span>C++</span>
-        <span>Python</span>
-        <span>MATLAB</span>
-        <span>Verilog</span>
-        <span>Assembly</span>
-      </div>
-    </div>
-
-    <!-- Platforms & Tools -->
-    <div class="skill-card">
-      <h3>Platforms & Tools</h3>
-      <div class="tags">
-        <span>Arduino IDE</span>
-        <span>TinkerCad / Wokwi / Multisim</span>
-        <span>PSSpice / Proteus</span>
-        <span>Xilinix 14.7 / Vivado</span>
-        <span>Microwind / Dsch2</span>
-        <span>Matlab</span>
-      </div>
-    </div>
-
-    <!-- Hardware -->
-    <div class="skill-card">
-      <h3>Hardware</h3>
-      <div class="tags">
-        <span>Arduino</span>
-        <span>ESP32</span>
-        <span>Raspberry Pi</span>
-        <span>STM32</span>
-        <span>Sensors & Actuators</span>
-        <span>Artex 7</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-  <!-- PROJECTS -->
-<section class="skills-section" id="projects">
-  <h4 class="mini-title">SELECTED WORK</h4>
-  <h2 class="main-title">Projects</h2>
-  <p class="subtitle">
-    Hardware-first builds — each one shipped with real circuits, real code.
-  </p>
-
-  <div class="projects-container">
-
-    <!-- Project 1 -->
-    <div class="project-card">
-      
-        <video controls width="300">
-  <source src="image/io.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-      </a>
-      <div class="project-content">
-        <h3>Industrial Automation and IoT 4.0</h3>
-        <p><span class="highlight">
-          An IOT based Fault monitoring System in Insutrial Machinaries, by using Temperature,Humidity, Flame, Heat Parameters Using Sensors To Control Fault and Prevent the Machineris by using Relay to Cutoff the Power.
-        </span></p>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card">
-      
-        <img src="image/ro.jpeg" alt="Project 2">
-      </a>
-      <div class="project-content">
-        <p><h3>Semi-Autonomous Theft-Proof
-           Delivery Robot for In-Campus
-            Delivery</h3></p>
-        <p><span class="highlight">
-          A smart delivery robot used inside a campus that can move on its own to deliver items. It has basic safety and locking features to prevent theft and needs little human control.
-        </span></p>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card">
-      
-        <img src="images/project3.jpg" alt="Project 3">
-      </a>
-      <div class="project-content">
-        <h3>Embedded Control System</h3>
-        <p>
-          Microcontroller-based automation system with sensor 
-          integration and real-time control logic.
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section class="skills-section" id="education">
-  <h4 class="mini-title">JOURNEY</h4>
-  <h2 class="main-title">Education</h2>
-  <p class="subtitle">
-    Where I learned to think like an engineer.
-  </p>
-  <div class="education-container">
-
-    <!-- Item 1 -->
-    <div class="edu-card">
-      <div class="edu-icon">🎓</div>
-      <div class="edu-content">
-        <div class="edu-row">
-  <h3>B.E. Electronics & Communication Engineering</h3>
-  <span class="cgpa">CGPA 8.8/10</span>
-</div>
-       <div class="edu-bol"> <span class="edu-college"><span class="highlight">Government College Engineering Bargur (Autonomous)   —    Affiliated to Anna University </span></span></div>
-        <span class="edu-year"><span class="highlight">2023 – 2027</span></span>
-       <div class="edu-bot"> <p>
-          Focused on embedded systems, VLSI Design, and IoT development.
-          Actively building real-world hardware and firmware projects.
-        </p></div>
-      </div>
-    </div>
-
-    <!-- Item 2 -->
-    <div class="edu-card">
-      <div class="edu-icon">🏫</div>
-      <div class="edu-content"><div class="edu-row">
-        <h3>Higher Secondary Education</h3>
-        <span class="percentage">Percentage: 88.8%</span></div>
-        <div class="school">
-          <span class="edu-college"><span class="highlight">Nalanda Matric Higher Secondary School Krishnagiri </span></span>
-        </div>
-        <div class="school-year">
-          <span class="edu-year"><span class="highlight">2021 – 2023</span></span>
-        </div>
-        <div class="school-goal">
-          <p>
-            Specialized in Mathematics and Physics with strong fundamentals 
-            in electronics and problem-solving.
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <span class="eyebrow">Electronics &amp; Hardware Testing Engineer</span>
+          <h1>Hi, I'm <span class="name">Selvaraj</span> <span class="name-initial">G</span></h1>
+          <p class="hero-subtitle" aria-label="B.E. Electronics & Communication Engineering, Final Year">
+            <span class="degree-line">B.E. Electronics &amp; Communication Engineering</span>
+            <span class="year-line">Final Year</span>
           </p>
+          <div class="availability-pill">
+            <span class="pulse"></span>
+            Available for internships • <span id="current-date">December 2026</span>
+          </div>
+
+          <p class="lead">
+            Passionate ECE undergraduate exploring the intersection of embedded systems,
+            signal processing, and IoT. I build hardware that thinks — from microcontroller
+            prototypes to full PCB validation systems — and enjoy turning physics into
+            working circuits.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://drive.google.com/file/d/1y0BRIrKEnvIbeT_kB8ZUXoPT676v6pBp/view?usp=drive_link" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5A2.5 2.5 0 0 1 9.5 1h5.25a.75.75 0 0 1 .53.22l3.5 3.5a.75.75 0 0 1 .22.53V18.5A2.5 2.5 0 0 1 17 21H9.5A2.5 2.5 0 0 1 7 18.5v-15Zm2.5-.5a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1H17a1 1 0 0 0 1-1V6.5h-2.5A1.5 1.5 0 0 1 14 5V2.5H9.5Zm5 1.07v1.93h2.93l-2.93-2.93Zm-3.5 8.43h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Zm0 3.5h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"/></svg>
+              View Resume
+            </a>
+            <a class="btn btn-secondary" href="mailto:selvatheengineer@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.2-.25 6.8 5.28 6.8-5.28H5.2Zm13.55 1.97-6.32 4.9a1 1 0 0 1-1.26 0L5.25 8.47v8.78c0 .69.56 1.25 1.25 1.25h10.99c.69 0 1.25-.56 1.25-1.25V8.47Z"/></svg>
+              Email Me
+            </a>
+            <div class="social-links" aria-label="Social profiles">
+              <a href="https://www.linkedin.com/in/selvaraj-g-5100303b3/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.9v8.75H5.5V9.75Zm5.13 0h2.77v1.2h.04c.39-.74 1.34-1.52 2.76-1.52 2.96 0 3.5 1.95 3.5 4.48v4.59h-2.9v-4.3c0-1.02-.02-2.34-1.42-2.34-1.43 0-1.65 1.12-1.65 2.27v4.37h-2.9V9.75Z"/></svg>
+              </a>
+              <a href="https://github.com/selvaraj-ctrl" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.25A9.75 9.75 0 0 0 8.62 21.3c.49.09.67-.21.67-.47v-1.68c-2.72.59-3.3-1.17-3.3-1.17-.45-1.14-1.1-1.45-1.1-1.45-.9-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.88 1.52 2.32 1.08 2.89.83.09-.64.35-1.08.64-1.33-2.17-.25-4.45-1.09-4.45-4.83 0-1.07.38-1.94 1.01-2.62-.1-.25-.44-1.29.1-2.68 0 0 .83-.27 2.72 1.01A9.4 9.4 0 0 1 12 7.01c.84 0 1.69.11 2.49.33 1.88-1.28 2.71-1.01 2.71-1.01.54 1.39.2 2.43.1 2.68.63.68 1.01 1.55 1.01 2.62 0 3.75-2.29 4.58-4.47 4.82.36.31.68.92.68 1.86v2.76c0 .26.18.57.68.47A9.75 9.75 0 0 0 12 2.25Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <img src="image/image.png" alt="Selvaraj G portrait" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-heading">
+          <p class="section-tag">About</p>
+          <h2>Engineer by Passion. Hardware by Focus</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card">
+            <p>
+              I am an electronics and communication engineering student focused on embedded
+              systems, automation, PCB-based validation, and real-world hardware development.
+              My work combines practical circuit design with software control to build tools
+              that can test, monitor, and improve engineering systems.
+            </p>
+            <p>
+              From microcontroller-based projects to intelligent test benches, I enjoy solving
+              challenges at the boundary of electronics, automation, and software.
+            </p>
+          </div>
+
+          <div class="metrics">
+            <div class="metric-box">
+              <strong>20 Days</strong>
+              <span>Internship at Syrma SGS Limited, Bargur</span>
+            </div>
+            <div class="metric-box">
+              <strong>8.25 CGPA</strong>
+              <span>B.E. Electronics &amp; Communication</span>
+            </div>
+            <div class="metric-box">
+              <strong>3+</strong>
+              <span>Projects</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="section-heading center">
+          <p class="section-tag">Toolkit</p>
+          <h2>Skills &amp; Expertise</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Core ECE</h3>
+            <div class="tags">
+              <span>Digital Electronics</span>
+              <span>Analog Circuits</span>
+              <span>Signal Processing</span>
+              <span>Communication Systems</span>
+              <span>Control Systems</span>
+              <span>VLSI Design</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <div class="tags">
+              <span>Embedded C</span>
+              <span>C++</span>
+              <span>Python</span>
+              <span>MATLAB</span>
+              <span>Verilog</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Platforms &amp; Tools</h3>
+            <div class="tags">
+              <span>Arduino IDE</span>
+              <span>Wokwi</span>
+              <span>Multisim</span>
+              <span>Proteus</span>
+              <span>Vivado</span>
+              <span>MATLAB</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Hardware</h3>
+            <div class="tags">
+              <span>Arduino</span>
+              <span>ESP32</span>
+              <span>Raspberry Pi</span>
+              <span>STM32</span>
+              <span>Sensors &amp; Actuators</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience">
+        <div class="section-heading center">
+          <p class="section-tag">Experience</p>
+          <h2>Internship &amp; Industry Exposure</h2>
+        </div>
+
+        <div class="experience-card glass-card">
+          <div class="experience-icon">
+            <img src="image/syrma-sgs-logo.jpg" alt="Syrma SGS Limited logo" />
+          </div>
+          <div class="experience-content">
+            <h3>Intern</h3>
+            <p class="company">Syrma SGS Limited, Bargur</p>
+            <p class="duration">20 Days • 2026</p>
+            <ul>
+              <li>Completed a 20-day internship focused on industrial electronics and manufacturing exposure.</li>
+              <li>Gained insight into electronics production workflow, component handling, and practical process understanding.</li>
+              <li>Developed a stronger appreciation for real-world hardware quality, testing, and engineering discipline.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <div class="section-heading center">
+          <p class="section-tag">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="image/pcb-functional-tester.png" alt="ESP32 PCB functional tester prototype with connected test hardware" />
+            </div>
+            <div class="project-body">
+              <p class="project-tag">ESP32 • Embedded Testing • Automation</p>
+              <h3>AI-Assisted Automated ESP32 PCB Functional Tester</h3>
+              <p>
+                Designed a smart PCB validation system for ESP32 boards to automate checks for
+                GPIO, UART, SPI, I2C, WiFi, and Bluetooth communication. The platform helps
+                identify board faults faster and provides a structured testing dashboard for
+                production-ready validation.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <video controls muted playsinline>
+                <source src="image/io.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="project-body">
+              <p class="project-tag">IoT • Automation • Safety</p>
+              <h3>Industrial Automation and IoT 4.0</h3>
+              <p>
+                Developed an IoT-based fault monitoring system for industrial machinery using
+                temperature, humidity, flame, and heat sensors. The system uses relay-based cutoff
+                logic to prevent equipment damage and improve preventive maintenance.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="image/delivery-robot.png" alt="Semi-autonomous theft-proof campus delivery robot" />
+            </div>
+            <div class="project-body">
+              <p class="project-tag">Robotics • Security • Campus Mobility</p>
+              <h3>Semi-Autonomous Theft-Proof Delivery Robot</h3>
+              <p>
+                Built a campus delivery robot that can navigate autonomously while ensuring basic
+                security, locking, and theft-prevention features. The design emphasizes safe and
+                low-human-intervention delivery in constrained indoor spaces.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="education section" id="education">
+        <div class="section-heading center">
+          <p class="section-tag">Journey</p>
+          <h2>Education</h2>
+        </div>
+
+        <div class="edu-stack">
+          <article class="edu-card glass-card">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-content">
+              <div class="edu-head">
+                <h3>Higher Secondary Education</h3>
+                <span>88.8%</span>
+              </div>
+              <p class="school">Nalanda Matric Higher Secondary School, Krishnagiri</p>
+              <p class="date">2022 – 2023</p>
+              <p>
+                Strong foundation in Mathematics and Physics with a focus on analytical thinking,
+                electronics fundamentals, and problem-solving.
+              </p>
+            </div>
+          </article>
+
+          <article class="edu-card glass-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-content">
+              <div class="edu-head">
+                <h3>B.E. Electronics &amp; Communication Engineering</h3>
+                <span>CGPA: 8.25 / 10</span>
+              </div>
+              <p class="school">Government College of Engineering Bargur (Autonomous)</p>
+              <p class="date">2023 – 2027</p>
+              <p>
+                Focused on embedded systems, VLSI design, and IoT development while building
+                hands-on hardware and firmware projects.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="credentials section" id="credentials">
+        <div class="section-heading center">
+          <p class="section-tag">Credentials</p>
+          <h2>Certifications &amp; Events</h2>
+        </div>
+
+        <div class="credential-grid">
+          <article class="credential-card glass-card">
+            <img src="image/TE.jpeg" alt="Technical event certificate" />
+            <h3>Technical Events</h3>
+            <p>GCE Salem</p>
+          </article>
+
+          <article class="credential-card glass-card">
+            <img src="image/PE.jpeg" alt="Project expo achievement" />
+            <h3>3rd Prize in Project Expo</h3>
+            <p>CompCom'26 • GCE Salem</p>
+          </article>
+
+          <article class="credential-card glass-card">
+            <img src="image/we.png" alt="Niral Thiruvizha certificate" />
+            <h3>Niral Thiruvizha'26</h3>
+            <p>Wadhwani Foundation</p>
+          </article>
+        </div>
+
+        <div class="event-list">
+          <div class="event-item glass-card">
+            <h3>IoT Design Workshop - Delta Electronics</h3>
+            <p>Built a simulated agriculture monitoring system using Tinkercad and Node-RED with MQTT, gaining hands-on exposure to ESP32 and sensor-driven automation.</p>
+          </div>
+          <div class="event-item glass-card">
+            <h3>Smart India Hackathon'25</h3>
+            <p>Designed a smart irrigation and disaster management system using ESP32-S3, GSM, and sensing modules to support remote monitoring and efficient control.</p>
+          </div>
+          <div class="event-item glass-card">
+            <h3>IISc Open Day'26</h3>
+            <p>Visited advanced research and engineering showcases in robotics, aerospace, and electronics to understand real-world innovation environments.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="section-heading center footer-heading">
+        <p class="section-tag">Let's Connect</p>
+        <h2>Get in Touch</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <span class="contact-icon">✉</span>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:selvatheengineer@gmail.com">selvatheengineer@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <span class="contact-icon">📞</span>
+          <div>
+            <h3>Phone</h3>
+            <a href="tel:+916381150464">+91 6381150464</a>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <span class="contact-icon">in</span>
+          <div>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/selvaraj-g-5100303b3/" target="_blank" rel="noopener noreferrer" aria-label="Open Selvaraj's LinkedIn profile">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="contact-card glass-card">
+          <span class="contact-icon">⌂</span>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/selvaraj-ctrl" target="_blank" rel="noopener noreferrer" aria-label="Open Selvaraj's GitHub profile">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
 
-  </div>
-</section>
-  <section id="certificates" class="skills-section">
-    <h4 class="mini-title">Credentials</h4>
-  <h2 class="main-title">Certifications</h2>
-  <p class="subtitle">
-    Verified learning and specialisation tracks.
-  </p>
-    <div class="cert-container">
+      <p class="footer-note">© <span id="year"></span> Selvaraj G • Updated for the current date</p>
+    </footer>
 
-    <!-- Certificate 1 -->
-    <div class="cert-card">
-        <img src="image/TE.jpeg" alt="Certificate 1">
-      </a>
-      <div class="cert-content">
-        <h3>Technical Events</h3>
-        <p><span class="highlight">Gce Salem</span></p>
-      </div>
-    </div>
+    <script src="script.js"></script>
+    <script>
+      const currentDate = new Date();
+      const yearNode = document.getElementById('year');
+      const liveClock = document.getElementById('live-clock');
 
-    <!-- Certificate 2 -->
-    <div class="cert-card">
-        <img src="image/PE.jpeg" alt="Certificate 2">
-      </a>
-      <div class="cert-content">
-        <h3>3rd Prize in Project Expo @ CompCom'26 </h3>
-        <p><span class="highlight">Gce Salem</span></p>
-      </div>
-    </div>
+      if (yearNode) {
+        yearNode.textContent = currentDate.getFullYear();
+      }
 
-    <!-- Certificate 3 -->
-    <div class="cert-card">
-        <img src="image/we.png" alt="Certificate 3">
-      </a>
-      <div class="cert-content">
-        <h3>Niral Thiruvizha'26</h3>
-        <p><span class="highlight">WADHWANi FOUNDATION</span></p>
-      </div>
-    </div>
+      if (liveClock) {
+        const updateClock = () => {
+          liveClock.dateTime = new Date().toISOString();
+          liveClock.textContent = new Intl.DateTimeFormat('en-IN', {
+            dateStyle: 'medium',
+            timeStyle: 'medium',
+          }).format(new Date());
+        };
 
-  </div>
-  </section>
-<section id="Events" class="skills-section">
-    <h4 class="mini-title">Beyond the Classroom</h4>
-  <h2 class="main-title">Events & Competitions</h2>
-  <p class="subtitle">
-    Hackathons, tech-fests and competitive engineering.
-  </p>
-    <section class="events" id="events">
-  <h2 class="section-title">Events & Participation</h2>
-
-  <div class="events-container">
-
-    <div class="event-card"><h3>IOT Design Workshop - Delta Elctronics</h3><p> 
-      Participated in a 2-day IoT workshop, developing a simulated agriculture monitoring system using Tinkercad and Node-RED with MQTT.
-Gained hands-on experience with ESP32, Arduino, sensor integration, and real-time data communication.</p></div>
-
-    <div class="event-card"><h3>Green Skill Advancement Workshop - 2025 </h3><p>
-       Attended a 2-day EV & AI workshop, building basic ML models like linear regression using Python in Google Colab.
-Explored EV systems including BMS and charging, gaining foundational knowledge of EV architecture and AI concepts.</p></div>
-
-    <div class="event-card"><h3>Smart India Hackathon'25</h3><p>
-      Designed a Smart Water Irrigation & Disaster Management System using ESP32-S3, GSM module, and sensors.
-Enabled remote monitoring and efficient irrigation control, performing well in the intra-college round.</p></div>
-
-    <div class="event-card"><h3>Frequency Spectrum Analysis and Spectrum Analyzer Using DSO</h3><p>
-      Attended a workshop on electronic measurement using CRO, DSO, and MSO for waveform analysis and signal debugging.
-Explored RF testing and antenna basics in an anechoic chamber, building strong signal analysis skills.</p></div>
-
-    <div class="event-card"><h3>Iot Based System Design with Modern Microcontrollers</h3><p>
-       Conducted an IoT demonstration using Raspberry Pi and ESP32, integrating sensors, motors, and display modules.
-Used Thonny and 4G SIM communication, effectively demonstrating the system and enhancing communication skills.</p></div>
-
-    <div class="event-card"><h3>Edge AI tool - Demo </h3><p> 
-      Attended a session on Edge AI and TinyML, covering neural networks, hardware accelerators, and ML frameworks.
-Explored TensorFlow, PyTorch, STM32 boards, and NVIDIA Jetson for real-world edge computing applications.</p></div>
-
-    <div class="event-card"><h3>Skill Development Tools - Demo </h3><p> 
-      Participated in a hands-on electronics session using tools like multimeter, LCR meter, and clamp meter.
-Learned soldering techniques and basic circuit assembly, along with Raspberry Pi setup and development.</p></div>
-
-    <div class="event-card"><h3>IISC OPEN DAY'26</h3><p>
-      Visited IISc Open Day, exploring advanced projects in aerospace, robotics, and electronics.
-Gained insights into real-world engineering innovations and cutting-edge research environments.</p></div>
-
-    <div class="event-card"><h3>CompCom'26 @ Gce Salem</h3><p> 
-      Participated in technical events at GCE Salem, securing 3rd prize in a Project Expo for an IoT-based automation system.
-Gained exposure to inter-college symposiums and competitive technical environments.</p></div>
-
-    <div class="event-card"><h3>3D PRINETER - Demo</h3><p> 
-      Attended a hands-on demo on 3D printing, learning additive manufacturing and design-to-print workflows.
-Observed printer operations and material usage, gaining knowledge of rapid prototyping techniques.</p></div>
-
-    <div class="event-card"><h3>Niral Thiruvizha'26</h3><p>
-       Participated in Niral Thiruviza by Wadhwani Foundation, securing 276th place across Tamil Nadu for VERDIXA AI.
-Gained exposure to hackathons and innovation-driven problem-solving environments</p></div>
-
-  </div>
-</section>
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="skills-section">
-    <h4 class="mini-title">Let's Connect</h4>
-  <h2 class="main-title">Get in Touch</h2>
-  <p class="subtitle">
-    Open to internships, research collaborations and hardware projects.
-  </p>
-<section class="contact-section">
-    <div class="contact-container">
-
-        <!-- Email -->
-        <div class="contact-card">
-            <div class="icon">✉</div>
-            <div class="contact-info">
-                <h3>EMAIL</h3>
-                <p>selvatheengineer@gmail.com</p>
-            </div>
-        </div>
-
-        <!-- Phone -->
-        <div class="contact-card">
-            <div class="icon">📞</div>
-            <div class="contact-info">
-                <h3>PHONE</h3>
-                <p>+91 6381150464</p>
-            </div>
-        </div>
-
-        <!-- LinkedIn -->
-        <div class="contact-card">
-            <div class="icon">in</div>
-            <div class="contact-info">
-                <h3>LINKEDIN</h3>
-                <p>linkedin.com/in/selvaraj-g</p>
-            </div>
-        </div>
-
-        <!-- GitHub -->
-        <div class="contact-card">
-            <div class="icon">🐱</div>
-            <div class="contact-info">
-                <h3>GITHUB</h3>
-                <p>github.com/selvaraj-ctrl</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-  <script src="script.js"></script>
-</body>
-</html>.
+        updateClock();
+        window.setInterval(updateClock, 1000);
+      }
+    </script>
+  </body>
+</html>

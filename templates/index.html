@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESP32 PCB Functional Tester</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='tester.css') }}">
+</head>
+<body class="selection-page">
+  <main class="selection-shell">
+    <div class="eyebrow">AUTOMATED TEST EQUIPMENT</div>
+    <h1>ESP32 PCB FUNCTIONAL TESTER</h1>
+    <p class="lead">Automated ESP32 PCB Testing System</p>
+    <section class="mode-grid" aria-label="Testing modes">
+      <article class="mode-card">
+        <span class="mode-number">MODE 1</span>
+        <h2>ESP32 38 pin</h2>
+        <p>Test a standard ESP32 38-pin DUT using the complete automated GPIO, UART, SPI, I2C, WiFi and Bluetooth test sequence.</p>
+        <a class="primary-button" href="/mode1">START ESP32 38 pin TEST <span aria-hidden="true">→</span></a>
+      </article>
+      <article class="mode-card">
+        <span class="mode-number">MODE 2</span>
+        <h2>ESP32 30 pin</h2>
+        <p>Test an ESP32 30-pin DUT using a second independent testing configuration.</p>
+        <a class="primary-button" href="/mode2">START ESP32 30 pin TEST <span aria-hidden="true">→</span></a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

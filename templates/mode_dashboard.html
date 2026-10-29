@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ mode_title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='tester.css') }}">
+</head>
+<body data-mode="{{ mode }}">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">AUTOMATED ESP32 TEST SYSTEM</div>
+      <h1>{{ mode_title }}</h1>
+    </div>
+    <div class="topbar-actions">
+      <div class="daily-count"><span>ESP32 count:</span><strong id="count-today">0</strong><small>tested today</small></div>
+      <a class="secondary-button" href="/{{ mode }}/history">HOURLY TEST HISTORY</a>
+      <a class="secondary-button" href="/">← BACK TO MODE SELECTION</a>
+    </div>
+  </header>
+  <main class="dashboard">
+    <section class="status-strip card">
+      <div><span class="label">TESTER ESP32-S3</span><strong id="tester-status" class="status neutral">Disconnected</strong></div>
+      <div><span class="label">DUT</span><strong id="dut-status" class="status neutral">Not Detected</strong></div>
+      <div><span class="label">CURRENT STAGE</span><strong id="stage-label">Ready to begin</strong></div>
+    </section>
+    <section class="controls card">
+      <button data-action="connect">CONNECT TESTER</button>
+      <button data-action="detect">DETECT DUT</button>
+      <button data-action="start" class="accent">START TEST</button>
+      <button data-action="stop" class="warning">STOP TEST</button>
+      <button data-action="clear" class="muted">CLEAR RESULTS</button>
+      <p id="notification" class="notification" role="status"></p>
+    </section>
+    <section class="card">
+      <div class="section-heading"><div><span class="eyebrow">SEQUENCE</span><h2>Testing Progress</h2></div><span id="run-status" class="pill neutral">IDLE</span></div>
+      <ol id="progress-list" class="progress-list">
+        <li data-stage="detection">DUT Detection</li><li data-stage="gpio">GPIO Test</li><li data-stage="uart">UART Test</li><li data-stage="spi">SPI Test</li><li data-stage="i2c">I2C Test</li><li data-stage="wifi">WiFi Test</li><li data-stage="bluetooth">Bluetooth Test</li><li data-stage="complete">Final Result</li>
+      </ol>
+    </section>
+    <section class="card gpio-config">
+      <div>
+        <span class="eyebrow">FIXTURE CONFIGURATION</span>
+        <h2>GPIOs to Test</h2>
+        <p>Enter comma-separated DUT GPIO numbers. Only include GPIOs wired to your fixture.</p>
+      </div>
+      <form id="gpio-config-form">
+        <label for="gpio-config-input">GPIO numbers</label>
+        <input id="gpio-config-input" name="gpios" type="text" inputmode="numeric" placeholder="4, 5, 12, 13, 14" required>
+        <button type="submit" class="accent">SAVE GPIO CONFIGURATION</button>
+      </form>
+      <p id="gpio-config-notice" class="notification" role="status"></p>
+    </section>
+    <div class="results-grid">
+      <section class="card gpio-card">
+        <div class="section-heading"><div><span class="eyebrow">ELECTRICAL</span><h2>GPIO Results</h2></div><span id="gpio-summary" class="pill neutral">0 / 0 PASS</span></div>
+        <div class="metrics"><div><span>Total Tested</span><strong id="gpio-tested">0</strong></div><div><span>Pass Count</span><strong id="gpio-pass" class="pass-text">0</strong></div><div><span>Fail Count</span><strong id="gpio-fail" class="fail-text">0</strong></div></div>
+        <div class="table-wrap"><table><thead><tr><th>GPIO</th><th>HIGH (V)</th><th>LOW (V)</th><th>RESULT</th></tr></thead><tbody id="gpio-table"><tr><td colspan="4" class="empty">No GPIO readings yet</td></tr></tbody></table></div>
+      </section>
+      <section class="card">
+        <div class="section-heading"><div><span class="eyebrow">WIRED BUS</span><h2>Communication</h2></div></div>
+        <div class="test-list"><div><span>UART</span><strong id="uart">NOT TESTED</strong></div><div><span>SPI</span><strong id="spi">NOT TESTED</strong></div><div><span>I2C</span><strong id="i2c">NOT TESTED</strong></div></div>
+      </section>
+      <section class="card">
+        <div class="section-heading"><div><span class="eyebrow">WIRELESS</span><h2>WiFi</h2></div><strong id="wifi-result" class="status neutral">NOT TESTED</strong></div>
+        <p><span class="label">AVAILABLE NETWORKS</span> <strong id="wifi-count">0</strong></p><ul id="wifi-names" class="device-list"><li>None detected</li></ul>
+      </section>
+      <section class="card">
+        <div class="section-heading"><div><span class="eyebrow">WIRELESS</span><h2>Bluetooth / BLE</h2></div><strong id="bluetooth-result" class="status neutral">NOT TESTED</strong></div>
+        <p><span class="label">AVAILABLE DEVICES</span> <strong id="bluetooth-count">0</strong></p><ul id="bluetooth-names" class="device-list"><li>None detected</li></ul>
+      </section>
+    </div>
+    <section class="final-result card"><span class="eyebrow">TEST CONCLUSION</span><h2>OVERALL RESULT</h2><strong id="overall-result" class="result-badge neutral">NOT TESTED</strong></section>
+  </main>
+  <script src="{{ url_for('static', filename='tester.js') }}"></script>
+</body>
+</html>
